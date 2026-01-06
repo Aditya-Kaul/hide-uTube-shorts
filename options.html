@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hide YouTube Shorts Options</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <main class="panel">
+      <h1>Hide YouTube Shorts</h1>
+
+      <section class="group">
+        <h2>Controls</h2>
+
+        <label class="toggle">
+          <input type="checkbox" id="hide-shelves" />
+          <span>Hide Shorts shelves</span>
+        </label>
+
+        <label class="toggle">
+          <input type="checkbox" id="redirect-shorts" />
+          <span>Redirect Shorts URLs</span>
+        </label>
+
+        <label class="toggle">
+          <input type="checkbox" id="hide-search" />
+          <span>Hide Shorts in search</span>
+        </label>
+
+        <label class="toggle">
+          <input type="checkbox" id="strict-mode" />
+          <span>Strict mode (aggressive hiding)</span>
+        </label>
+      </section>
+
+      <section class="group">
+        <h2>Productive Breaks</h2>
+        <button id="allow-button">Temporarily allow Shorts for 10 minutes</button>
+        <p id="allow-status" class="muted">Shorts currently blocked.</p>
+      </section>
+
+      <section class="group">
+        <h2>Stats</h2>
+        <p id="shorts-count" class="stat">Shorts blocked today: 0</p>
+      </section>
+    </main>
+
+    <script src="options.js"></script>
+  </body>
+</html>
